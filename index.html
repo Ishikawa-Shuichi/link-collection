@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>しゅーちゃんのリンク集</title>
+  <style>
+    :root {
+      --bg: #fff8e7;
+      --ink: #2b2d42;
+      --pink: #ff6b9d;
+      --yellow: #ffd93d;
+      --mint: #3ddc97;
+      --blue: #4dabf7;
+      --orange: #ff922b;
+    }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      padding: 24px 16px 48px;
+      background: var(--bg);
+      color: var(--ink);
+      font-family: "Hiragino Sans", "Yu Gothic UI", "Meiryo", system-ui, sans-serif;
+      line-height: 1.6;
+    }
+    main { max-width: 720px; margin: 0 auto; }
+    h1 {
+      margin: 0 0 4px;
+      font-size: 1.9rem;
+      text-align: center;
+    }
+    .lead { margin: 0 0 28px; text-align: center; color: #555; }
+    section { margin-bottom: 28px; }
+    h2 {
+      display: inline-block;
+      margin: 0 0 12px;
+      padding: 4px 14px;
+      border-radius: 999px;
+      font-size: 1.05rem;
+      background: var(--yellow);
+      border: 3px solid var(--ink);
+    }
+    .cards {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+      gap: 12px;
+    }
+    .card {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      min-height: 64px;
+      padding: 12px 16px;
+      border: 3px solid var(--ink);
+      border-radius: 16px;
+      background: #fff;
+      color: var(--ink);
+      text-decoration: none;
+      font-weight: 700;
+      box-shadow: 4px 4px 0 var(--ink);
+      transition: transform 0.12s, box-shadow 0.12s;
+    }
+    .card:hover, .card:focus-visible {
+      transform: translate(2px, 2px);
+      box-shadow: 2px 2px 0 var(--ink);
+      outline: none;
+    }
+    .card .icon {
+      flex: none;
+      display: grid;
+      place-items: center;
+      width: 40px;
+      height: 40px;
+      border-radius: 12px;
+      font-size: 1.4rem;
+      border: 2px solid var(--ink);
+    }
+    .learn .icon { background: var(--mint); }
+    .made .icon { background: var(--orange); }
+    .tool .icon { background: var(--blue); }
+    .sns .icon { background: var(--pink); }
+    footer { margin-top: 36px; text-align: center; font-size: 0.85rem; color: #777; }
+  </style>
+</head>
+<body>
+  <main>
+    <h1>🏀 しゅーちゃんのリンク集</h1>
+    <p class="lead">よく使うページを、ここから1タップで。</p>
+
+    <section>
+      <h2>📚 学習</h2>
+      <div class="cards learn">
+        <a class="card" href="https://vibe-coding.munakata-engineer.com/contents" target="_blank" rel="noopener"><span class="icon">🎓</span>ツクリバ（創理）</a>
+        <a class="card" href="https://discord.gg/CCuV6RNFPe" target="_blank" rel="noopener"><span class="icon">💬</span>創理 Discord</a>
+        <a class="card" href="https://claude.ai" target="_blank" rel="noopener"><span class="icon">🤖</span>Claude</a>
+      </div>
+    </section>
+
+    <section>
+      <h2>🛠 作ったもの</h2>
+      <div class="cards made">
+        <a class="card" href="https://shu-basketball-coach.netlify.app" target="_blank" rel="noopener"><span class="icon">🙋</span>自己紹介サイト</a>
+        <a class="card" href="https://github.com/Ishikawa-Shuichi" target="_blank" rel="noopener"><span class="icon">🐙</span>GitHub</a>
+      </div>
+    </section>
+
+    <section>
+      <h2>🧰 よく使うツール</h2>
+      <div class="cards tool">
+        <a class="card" href="https://mail.google.com" target="_blank" rel="noopener"><span class="icon">✉️</span>Gmail</a>
+        <a class="card" href="https://calendar.google.com" target="_blank" rel="noopener"><span class="icon">📅</span>Googleカレンダー</a>
+        <a class="card" href="https://www.youtube.com" target="_blank" rel="noopener"><span class="icon">▶️</span>YouTube</a>
+        <a class="card" href="https://app.netlify.com" target="_blank" rel="noopener"><span class="icon">🚀</span>Netlify</a>
+      </div>
+    </section>
+
+    <section>
+      <h2>📣 SNS</h2>
+      <div class="cards sns">
+        <a class="card" href="https://x.com" target="_blank" rel="noopener"><span class="icon">🐦</span>X</a>
+      </div>
+    </section>
+
+    <footer>リンクは自由に書き換えて育てていこう 🌱</footer>
+  </main>
+</body>
+</html>
